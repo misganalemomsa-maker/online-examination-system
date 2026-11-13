@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+
+    <style>
+        /* GENERAL DESIGN */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4e3da;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #123b68;
+            color: white;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            background-color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            color: #123b68;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            background-color: #123b68;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2563a6;
+        }
+
+        /* EXAM COLLECTION */
+
+        .features {
+            padding: 60px 30px;
+            text-align: center;
+        }
+
+        .features h2 {
+            color: #123b68;
+            margin-bottom: 20px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 30px;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .feature h3 {
+            color: #123b68;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* HIDE EXAM COLLECTION INITIALLY */
+
+        #exit-exams {
+            display: none;
+        }
+
+        /* SHOW EXAM COLLECTION WHEN GET STARTED IS CLICKED */
+
+        #exit-exams:target {
+            display: block;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #123b68;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 10px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* MOBILE RESPONSIVE DESIGN */
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            .feature {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Online Exit Examination System</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#exit-exams">Exams</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HOME SECTION -->
+
+    <section class="hero" id="home">
+
+        <h2>Welcome to Online Exit Examination System</h2>
+
+        <p>
+            A modern platform for conducting online examinations,
+            managing students, and displaying examination results.
+        </p>
+
+        <!-- GET STARTED BUTTON -->
+
+        <a href="#exit-exams" class="btn">
+            Get Started
+        </a>
+
+    </section>
+
+
+    <!-- EXAM COLLECTION -->
+
+    <section class="features" id="exit-exams">
+
+        <h2>Computer Science Exit Exam Collection</h2>
+
+        <p>
+            Welcome! Select any examination or study material
+            below to begin your preparation.
+        </p>
+
+        <div class="feature-container">
+
+            <!-- 2015 EXAM -->
+
+            <div class="feature">
+
+                <h3>2015 Computer Science Exit Exam</h3>
+
+                <p>
+                    Practice the 2015 Computer Science Exit Exam.
+                    It contains 93 practice questions.
+                </p>
+
+                <a href="https://www.exitexamstudio.app/exam/computer-science__2015__regular"
+                   class="btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Start 2015 Exam
+
+                </a>
+
+            </div>
+
+
+            <!-- 2016 EXAM -->
+
+            <div class="feature">
+
+                <h3>2016 Computer Science Exit Exam</h3>
+
+                <p>
+                    Practice the 2016 Computer Science Exit Exam.
+                    It contains 104 practice questions.
+                </p>
+
+                <a href="https://www.exitexamstudio.app/exam/computer-science__2016__regular"
+                   class="btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Start 2016 Exam
+
+                </a>
+
+            </div>
+
+
+            <!-- STUDY MATERIAL -->
+
+            <div class="feature">
+
+                <h3>2015 Study Material</h3>
+
+                <p>
+                    Additional questions and revision materials.
+                </p>
+
+                <a href="https://www.studocu.com/row/document/addis-ababa-science-and-technology-university/computer-science/computer-exit-exam-2015/107827978"
+                   class="btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Open Material
+
+                </a>
+
+            </div>
+
+
+            <!-- MORE EXAMS -->
+
+            <div class="feature">
+
+                <h3>More Exit Exams</h3>
+
+                <p>
+                    Add 2017, 2018, 2019 and other examination years.
+                </p>
+
+                <a href="#exit-exams" class="btn">
+                    View Collection
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="features" id="about">
+
+        <h2>About Our Project</h2>
+
+        <p>
+            The Online Examination and Automatic Grading System
+            is designed to provide a convenient way to manage
+            online examinations and student assessment.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Online Examination System © 2026</p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:0928248446">0928248446</a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit My LinkedIn
+            </a>
+        </p>
+
+        <p>Designed using HTML and CSS</p>
+
+    </footer>
+
+</body>
+</html>
